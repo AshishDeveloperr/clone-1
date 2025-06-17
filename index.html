@@ -45,19 +45,32 @@
         <a href="#" class="text-gray-700 hover:text-blue-600 font-medium inter group inline-flex items-center transition-all">
         AInterviews For Hiring
         <svg width="18" height="19" class="ml-1 transform transition-transform group-hover:translate-x-1" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.75 9.5H14.25M14.25 9.5L9 4.25M14.25 9.5L9 14.75" stroke="currentColor" stroke-width="1.36111" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
+            <path d="M3.75 9.5H14.25M14.25 9.5L9 4.25M14.25 9.5L9 14.75" stroke="currentColor" stroke-width="1.36111" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
         </a>
 
       </nav>
 
-      <!-- Right: Buttons (Desktop only) -->
+      <!-- Right: Buttons -->
       <div class="hidden md:flex space-x-4">
         <button class="px-4 py-2 text-sm font-semibold border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition cursor-pointer inter">Login</button>
-        <button class="px-4 py-2 text-sm font-semibold bg-[#2f76ff] text-white rounded-lg hover:bg-[#2f76ff]/90 transition cursor-pointer inter">Sign up Free</button>
+       
+        <button class="group px-4 py-2 text-sm font-semibold bg-[#2f76ff] text-white rounded-lg hover:bg-[#2f76ff]/90 transition cursor-pointer inter relative overflow-hidden duration-500 w-[11.5rem] text-center">
+            <span class="absolute inset-0 flex items-center justify-center group-hover:opacity-0 transition-opacity duration-300 inter">
+                Try for Free
+            </span>
+            <span class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="flex items-center inter">
+                First 50 Calls Free
+                <svg width="18" height="19" class="ml-1 transform transition-transform group-hover:translate-x-1" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 9.5H14.25M14.25 9.5L9 4.25M14.25 9.5L9 14.75" stroke="currentColor" stroke-width="1.36111" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>
+            </span>
+        </button>
       </div>
 
-      <!-- Hamburger Icon (Mobile only) -->
+      <!-- Hamburger Icon -->
       <div class="md:hidden">
         <button id="menuToggle" class="text-gray-700 focus:outline-none" aria-label="Toggle menu">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
@@ -70,28 +83,45 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
-    <nav class="flex flex-col space-y-2 mt-2">
-      <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-      <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
-      <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
-      <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
-      <div class="flex space-x-2 mt-4">
-        <button class="w-full px-4 py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">Contact</button>
-        <button class="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Call</button>
-      </div>
+  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 shadow-lg shadow-gray-200">
+    <nav class="flex flex-col space-y-3 mt-2">
+        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium inter">Features</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium inter">Use Cases</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium inter group inline-flex items-center transition-all">
+            AInterviews For Hiring
+            <svg width="18" height="19" class="ml-1 transform transition-transform group-hover:translate-x-1" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.75 9.5H14.25M14.25 9.5L9 4.25M14.25 9.5L9 14.75" stroke="currentColor" stroke-width="1.36111" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </a>
+        <div class="flex space-x-2 mt-4">
+            <button class="px-4 py-2 text-sm font-semibold border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition cursor-pointer inter">Login</button>
+        
+            <button class="group px-4 py-2 text-sm font-semibold bg-[#2f76ff] text-white rounded-lg hover:bg-[#2f76ff]/90 transition cursor-pointer inter relative overflow-hidden duration-500 w-[11.5rem] text-center">
+                <span class="absolute inset-0 flex items-center justify-center group-hover:opacity-0 transition-opacity duration-300 inter">
+                    Try for Free
+                </span>
+                <span class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="flex items-center inter">
+                    First 50 Calls Free
+                    <svg width="18" height="19" class="ml-1 transform transition-transform group-hover:translate-x-1" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.75 9.5H14.25M14.25 9.5L9 4.25M14.25 9.5L9 14.75" stroke="currentColor" stroke-width="1.36111" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </span>
+                </span>
+            </button>
+        </div>
     </nav>
   </div>
 </header>
 
-    <main class="py-12 mt-20">
+    <main class="py-12 mt-12 lg:mt-20">
         <section class="container mx-auto px-4 lg:px-40 bg-main bg-[length:67.5rem_34.43rem] bg-[left_4rem_top_1.8rem] bg-no-repeat">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div class="col-span-1 mt-0 lg:mt-6">
                     <div class="mb-5 flex justify-center lg:justify-start">
-                        <span class="text-xs font-medium text-white inter bg-[#2F76FF] rounded-full px-4 py-2">The future of HR</span>
+                        <span class="text-sm lg:text-xs font-medium text-white inter bg-[#2F76FF] rounded-full px-4 py-2">The future of HR</span>
                     </div>
-                    <h1 class="text-4xl lg:text-6xl font-extrabold lg:leading-[3.81rem] tracking-[-1.56px] text-[#122345] text-center lg:text-start">
+                    <h1 class="text-4xl lg:text-6xl font-extrabold !leading-12 lg:!leading-[3.81rem] tracking-[-1.56px] text-[#122345] text-center lg:text-start">
                         SCALE TEAMS, NOT
                         <span class="text-blue-500">WORKLOAD</span>
                     </h1>
