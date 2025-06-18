@@ -22,7 +22,7 @@
 }
 
 .carousel-slider .swiper-slide {
-  width: clamp(200px, 65vw, 493px);
+  width: clamp(200px, 85vw, 493px);
   height: clamp(550px, 25vw, 293px);
   aspect-ratio: 1 / 1;
   box-sizing: border-box;
@@ -43,6 +43,7 @@
         background: linear-gradient(0deg, rgb(255 255 255 / .1) 0%, rgb(255 255 255 / 10%) 100%), linear-gradient(230deg, rgb(227 231 255 / 80%) -.14%, #fff0 39.21%, rgb(255 255 255 / 5%) 53.06%, rgb(147 154 236 / 100%) 130.99%), #4A78ED !important;
     filter: blur(2px);
     border-radius: 25px;
+    /* visibility: hidden; */
 }
 
 .carousel-slider .swiper-slide.swiper-slide-active {
