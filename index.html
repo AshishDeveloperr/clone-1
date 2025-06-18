@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/output.css">
+    <link rel="stylesheet" href="src/css/custom.css">
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
-        *{
-            font-family: 'General Sans', sans-serif;
-        }
-        .inter {
-            font-family: "Inter", sans-serif;
-        }
         .bg-main {
             background-image: url(src/img/main-bg.png);
             background-repeat: no-repeat;
@@ -222,7 +217,7 @@
         </section>
         <section class="container mx-auto px-4 lg:px-40 pt-20 pb-20 max-sm:pb-12">
             <div class="mt-20 lg:mt-0 lg:px-5">
-                <p class="text-center text-lg font-medium text-[#414F6A] pr-0.5 inter">
+                <p class="text-center text-lg font-medium text-[#414F6A] inter">
                     Trusted by the most innovative companies to scale their teams, fast	
                 </p>
                 <ul class="flex justify-between mt-6 gap-x-5 max-lg:gap-x-9 max-lg:flex-wrap max-lg:mt-8 max-sm:justify-center max-sm:gap-y-3">
@@ -327,26 +322,151 @@
                 </ul>
             </div>
         </section>
+        <section class="contyainer mx-auto px-4 lg:px-40">
+            <div class="text-center">
+                <h2 class="text-4xl font-medium inter text-[#122345]">Delivering Exceptional CX Across Industries</h2>
+                <p class="text-lg font-medium text-[#414F6A] mt-4 inter">Powering Sales & Support for India's Fastest Growing Sectors</p>
+                    <style>
+                        .carousel-btn-active {
+                            background: linear-gradient(270deg, #FFE5D9 0%, #F0D7FF 100%);
+                            padding: 6px 30px;
+                            border-radius: 30px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #231942;
+                        }
+                        .carousel-btn {
+                            background: #F7F7F7;
+                            padding: 6px 30px;
+                            border-radius: 30px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #231942;
+                        }
+                    </style>
+                <div class="pt-12 pb-10 flex flex-wrap justify-center gap-4">
+                    <button class="carousel-btn carousel-btn-active inter">E-commerce</button>
+                    <button class="carousel-btn inter">Fintech</button>
+                    <button class="carousel-btn inter">Edtech</button>
+                    <button class="carousel-btn inter">Healthcare</button>
+                    <button class="carousel-btn inter">Travel & Hospitality</button>
+                    <button class="carousel-btn inter">Gaming</button>
+                   <button class="carousel-btn inter">Lending</button>
+                </div>
+            </div>
+            <div class="carousel-parent my-10">   
+                <div class="carousel-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                            <div>
+                                d
+                            </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                test2
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                test3
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                test4
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                test5
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                test6
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                test7
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-content">
+                                test8
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <script></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-  const header = document.getElementById('mainHeader');
-  const toggle = document.getElementById('menuToggle');
-  const mobileMenu = document.getElementById('mobileMenu');
+        const header = document.getElementById('mainHeader');
+        const toggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
 
-  // Scroll shadow logic
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      header.classList.add('shadow-sm');
-    } else {
-      header.classList.remove('shadow-sm');
-    }
-  });
+        // Scroll shadow logic
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+            header.classList.add('shadow-sm');
+            } else {
+            header.classList.remove('shadow-sm');
+            }
+        });
 
-  // Mobile menu toggle
-  toggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
+        // Mobile menu toggle
+        toggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Swiper
+        const carouselSlider = new Swiper(".carousel-slider", {
+        grabCursor: true,
+        watchSlidesProgress: true,
+        loop: true,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 10,
+        initialSlide: 0,
+        on: {
+            progress(e) {
+            const t = e.slides.length;
+            console.log("progress", e.slides.length);
+            for (let r = 0; r < e.slides.length; r++) {
+                const o = e.slides[r];
+                const s = e.slides[r].progress;
+                const i = Math.abs(s);
+                let n = 1;
+                if (i > 1) n = 0.3 * (i - 1) + 1;
+                const l = o.querySelectorAll(".item-content");
+                const a = s * n * 72 + "%";
+                const c = 1 - 0.2 * i;
+                const d = t - Math.abs(Math.round(s));
+                o.style.transform = `translateX(${a}) scale(${c})`;
+                o.style.zIndex = d.toString();
+                o.style.opacity = i > 3 ? "0" : "1";
+                l.forEach((el) => {
+                el.style.opacity = (1 - i / 3).toString();
+                });
+            }
+            },
+            setTransition(e, t) {
+            for (let r = 0; r < e.slides.length; r++) {
+                const o = e.slides[r];
+                const s = o.querySelectorAll(".item-content");
+                o.style.transitionDuration = `${t}ms`;
+                s.forEach((el) => {
+                el.style.transitionDuration = `${t}ms`;
+                });
+            }
+            }
+        }
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <title>Tailwind Carousel</title>
+
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      overflow: hidden;
+      background-color: #203558;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen font-sans">
+
+  <!-- Carousel Wrapper -->
+  <div class="swiper carousel-slider max-w-full max-h-[200px]">
+    <div class="swiper-wrapper items-center">
+      <!-- Slides -->
+      <div class="swiper-slide bg-[rgba(9,21,50,0.2)] rounded-[25px] p-4 w-[clamp(150px,15vw,293px)] h-[clamp(150px,15vw,293px)] flex items-center justify-center aspect-square">
+        <div class="item-content text-white text-lg">test1</div>
+      </div>
+      <div class="swiper-slide bg-[rgba(9,21,50,0.2)] rounded-[25px] p-4 w-[clamp(150px,15vw,293px)] h-[clamp(150px,15vw,293px)] flex items-center justify-center aspect-square">
+        <div class="item-content text-white text-lg">test2</div>
+      </div>
+      <div class="swiper-slide bg-[rgba(9,21,50,0.2)] rounded-[25px] p-4 w-[clamp(150px,15vw,293px)] h-[clamp(150px,15vw,293px)] flex items-center justify-center aspect-square">
+        <div class="item-content text-white text-lg">test3</div>
+      </div>
+      <div class="swiper-slide bg-[rgba(9,21,50,0.2)] rounded-[25px] p-4 w-[clamp(150px,15vw,293px)] h-[clamp(150px,15vw,293px)] flex items-center justify-center aspect-square">
+        <div class="item-content text-white text-lg">test4</div>
+      </div>
+      <div class="swiper-slide bg-[rgba(9,21,50,0.2)] rounded-[25px] p-4 w-[clamp(150px,15vw,293px)] h-[clamp(150px,15vw,293px)] flex items-center justify-center aspect-square">
+        <div class="item-content text-white text-lg">test5</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Custom Swiper Logic -->
+  <script>
+    const carouselSlider = new Swiper(".carousel-slider", {
+      grabCursor: true,
+      watchSlidesProgress: true,
+      loop: true,
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 20,
+      initialSlide: 0,
+      on: {
+        progress(swiper) {
+          const total = swiper.slides.length;
+          swiper.slides.forEach((slide, i) => {
+            const progress = slide.progress;
+            const abs = Math.abs(progress);
+            const scaleFactor = abs > 1 ? 0.3 * (abs - 1) + 1 : 1;
+            const translateX = `${progress * scaleFactor * 50}%`;
+            const scale = 1 - 0.2 * abs;
+            const z = total - Math.abs(Math.round(progress));
+            const opacity = abs > 3 ? 0 : 1;
+
+            slide.style.transform = `translateX(${translateX}) scale(${scale})`;
+            slide.style.zIndex = z.toString();
+            slide.style.opacity = opacity.toString();
+
+            const content = slide.querySelectorAll(".item-content");
+            content.forEach((el) => {
+              el.style.opacity = (1 - abs / 3).toString();
+            });
+          });
+        },
+        setTransition(swiper, duration) {
+          swiper.slides.forEach((slide) => {
+            slide.style.transitionDuration = `${duration}ms`;
+            slide.querySelectorAll(".item-content").forEach((el) => {
+              el.style.transitionDuration = `${duration}ms`;
+            });
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>
