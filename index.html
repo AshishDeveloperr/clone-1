@@ -322,81 +322,343 @@
                 </ul>
             </div>
         </section>
-        <section class="contyainer mx-auto px-4 lg:px-40">
+        <style>
+            .carousel-btn {
+                background: #F7F7F7;
+                padding: 6px 30px;
+                border-radius: 30px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #231942;
+                cursor: pointer;
+            }
+            .carousel-btn-active {
+                background: linear-gradient(270deg, #dbddf4 0%, #b0adfd 100%) !important;
+            }
+            .carousel-btn:hover {
+                background: #f3f3f3;
+            }
+            .icon-box{
+                border: 1px solid var(--copy-of-squadiqs-spectacular-site---base--white);
+                background-image: radial-gradient(circle at 204% 135%, #ffffff7d, #ffffff12);
+                border-radius: 13px;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                min-width: 50px;
+                height: 50px;
+                display: flex;
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+
+        </style>
+        <section class="container mx-auto px-4 lg:px-40 mt-8">
             <div class="text-center">
-                <h2 class="text-4xl font-medium inter text-[#122345]">Delivering Exceptional CX Across Industries</h2>
-                <p class="text-lg font-medium text-[#414F6A] mt-4 inter">Powering Sales & Support for India's Fastest Growing Sectors</p>
-                    <style>
-                        .carousel-btn-active {
-                            background: linear-gradient(270deg, #FFE5D9 0%, #F0D7FF 100%);
-                            padding: 6px 30px;
-                            border-radius: 30px;
-                            font-size: 16px;
-                            font-weight: 500;
-                            color: #231942;
-                        }
-                        .carousel-btn {
-                            background: #F7F7F7;
-                            padding: 6px 30px;
-                            border-radius: 30px;
-                            font-size: 16px;
-                            font-weight: 500;
-                            color: #231942;
-                        }
-                    </style>
-                <div class="pt-12 pb-10 flex flex-wrap justify-center gap-4">
-                    <button class="carousel-btn carousel-btn-active inter">E-commerce</button>
-                    <button class="carousel-btn inter">Fintech</button>
-                    <button class="carousel-btn inter">Edtech</button>
-                    <button class="carousel-btn inter">Healthcare</button>
-                    <button class="carousel-btn inter">Travel & Hospitality</button>
-                    <button class="carousel-btn inter">Gaming</button>
-                   <button class="carousel-btn inter">Lending</button>
+                <h2 class="text-4xl font-medium inter text-[#122345]">Hyperpersonalised Practice, Built for Enterprise Scale</h2>
+                <p class="text-lg font-medium text-[#414F6A] mt-4 inter">You pick the job. We simulate the moment.</p>
+                <div class="pt-20 pb-10 flex flex-nowrap lg:flex-wrap justify-start lg:justify-center gap-3 lg:gap-7 max-w-6xl mx-auto overflow-x-auto lg:overflow-visible scrollbar-hide whitespace-nowrap lg:whitespace-normal">
+
+                    <button class="carousel-btn carousel-btn-active inter" data-index="0">Lending</button>
+                    <button class="carousel-btn inter" data-index="1">Insurance</button>
+                    <button class="carousel-btn inter" data-index="2">Brokerage</button>
+                    <button class="carousel-btn inter" data-index="3">Logistics & E-commerce</button>
+                    <button class="carousel-btn inter" data-index="4">Education</button>
+                    <button class="carousel-btn inter" data-index="5">Travel & Tourism</button>
+                    <button class="carousel-btn inter" data-index="6">Consumer Electronics</button>
+                    <button class="carousel-btn inter" data-index="7">Automotive</button>
+                    <button class="carousel-btn inter" data-index="8">Banking</button>
+                    <button class="carousel-btn inter" data-index="9">Retail</button>
+                    <button class="carousel-btn inter" data-index="10">Health & Wellness</button>
                 </div>
             </div>
-            <div class="carousel-parent my-10">   
+            <div class="carousel-parent max-w-6xl overflow-hidden !py-52 lg:!py-40">   
                 <div class="carousel-slider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-slide-index="0">
                             <div class="item-content">
-                            <div>
-                                d
-                            </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item-content">
-                                test2
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item-content">
-                                test3
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item-content">
-                                test4
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item-content">
-                                test5
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item-content">
-                                test6
+                                <div>
+                                    <div class="flex space-x-4 items-center py-4 px-2">
+                                        <span class="icon-box">
+                                            <img src="src/img/lending.svg" alt="">
+                                        </span>
+                                        <span class="text-white inter font-medium text-lg">Lending</span>
+                                    </div>
+                                    <div class="py-3 lg:py-12 flex flex-wrap gap-4 px-2">
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Personal Loans</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Business Loans</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Credit Cards</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Cross-sell</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Early Bucket Collections</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Convert to EMI</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Welcome Calls</button>
+                                    </div>
+                                    <div class="flex justify-end px-3">
+                                        <div class="flex items-center space-x-2 mt-8">
+                                            <span class="text-base font-medium inter text-white">Know more</span>
+                                            <img src="src/img/right-arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-slide-index="1">
                             <div class="item-content">
-                                test7
+                                <div>
+                                    <div class="flex space-x-4 items-center py-4 px-2">
+                                        <span class="icon-box">
+                                            <img src="src/img/insurance.svg" alt="">
+                                        </span>
+                                        <span class="text-white inter font-medium text-lg">Insurance</span>
+                                    </div>
+                                    <div class="py-12 flex flex-wrap gap-4 px-2">
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Policy Copy Assistance Opening</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Claim Submission</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Claim Status Assistance</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Policy Discrepancies</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Early Bucket Collections</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Assistance</button>
+                                    </div>
+                                    <div class="flex justify-end px-3">
+                                        <div class="flex items-center space-x-2 mt-8">
+                                            <span class="text-base font-medium inter text-white">Know more</span>
+                                            <img src="src/img/right-arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-slide-index="2">
                             <div class="item-content">
-                                test8
+                                 <div>
+                                    <div class="flex space-x-4 items-center py-4 px-2">
+                                        <span class="icon-box">
+                                            <img src="src/img/brokerage.svg" alt="">
+                                        </span>
+                                        <span class="text-white inter font-medium text-lg">Brokerage</span>
+                                    </div>
+                                    <div class="py-4 flex flex-wrap gap-4 px-2">
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Account Opening</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Account Activation</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Account Reactivation and Re-KYC</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Control Tower</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Trading Limits or Charging Assistance</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Upselling and Cross-selling</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Delivery Escalations</button>
+                                    </div>
+                                    <div class="flex justify-end px-3">
+                                        <div class="flex items-center space-x-2 mt-4">
+                                            <span class="text-base font-medium inter text-white">Know more</span>
+                                            <img src="src/img/right-arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-slide-index="3">
+                            <div class="item-content">
+                                 <div>
+                                    <div class="flex space-x-4 items-center py-4 px-2">
+                                        <span class="icon-box">
+                                            <img src="src/img/logistics.svg" alt="">
+                                        </span>
+                                        <span class="text-white inter font-medium text-lg">Logistics & E-Commerce</span>
+                                    </div>
+                                    <div class="py-6 flex flex-wrap gap-4 px-2">
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Non-Delivery Returns</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Blue-Collar Workforce Hiring or Management</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Seller Onboarding and Management</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Order Status Inquiry</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Refund/Replace Process</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Control Tower</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Delivery Escalations or Adress Updates</button>
+                                    </div>
+                                    <div class="flex justify-end px-3">
+                                        <div class="flex items-center space-x-2 mt-0">
+                                            <span class="text-base font-medium inter text-white">Know more</span>
+                                            <img src="src/img/right-arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-slide-index="4">
+                            <div class="item-content">
+                                <div>
+                                    <div class="flex space-x-4 items-center py-4 px-2">
+                                        <span class="icon-box">
+                                            <img src="src/img/education.svg" alt="">
+                                        </span>
+                                        <span class="text-white inter font-medium text-lg">Education</span>
+                                    </div>
+                                    <div class="py-3 lg:py-12 flex flex-wrap gap-4 px-2">
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Lead Qualification</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Reactivation</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Upsell & Cross Sell</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Surveys</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Event Registration & Reminders</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Feedback</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">End-to-End Sales </button>
+                                    </div>
+                                    <div class="flex justify-end px-3">
+                                        <div class="flex items-center space-x-2 mt-8">
+                                            <span class="text-base font-medium inter text-white">Know more</span>
+                                            <img src="src/img/right-arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-slide-index="5">
+                            <div class="item-content">
+                                <div>
+                                    <div class="flex space-x-4 items-center py-4 px-2">
+                                        <span class="icon-box">
+                                            <img src="src/img/travel.svg" alt="">
+                                        </span>
+                                        <span class="text-white inter font-medium text-lg">Travel & Tourism</span>
+                                    </div>
+                                    <div class="py-12 flex flex-wrap gap-4 px-2">
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Booking confirmations</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Booking Status Inquiry</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Booking Modifications/Cancellations</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Refund Process</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Resolving Itinerary Errors</button>
+                                    </div>
+                                    <div class="flex justify-end px-3">
+                                        <div class="flex items-center space-x-2 mt-8">
+                                            <span class="text-base font-medium inter text-white">Know more</span>
+                                            <img src="src/img/right-arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-slide-index="6">
+                            <div class="item-content">
+                                <div>
+                                    <div class="flex space-x-4 items-center py-4 px-2">
+                                        <span class="icon-box">
+                                            <img src="src/img/customer-electronics.svg" alt="">
+                                        </span>
+                                        <span class="text-white inter font-medium text-lg">Consumer Electronics</span>
+                                    </div>
+                                    <div class="py-12 flex flex-wrap gap-4 px-2">
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Warranty Inquiry</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Service Center inquiry</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Installation Support</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Repair Requests or Service Escalations</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Early Bucket Collections</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Refund Process</button>
+                                    </div>
+                                    <div class="flex justify-end px-3">
+                                        <div class="flex items-center space-x-2 mt-8">
+                                            <span class="text-base font-medium inter text-white">Know more</span>
+                                            <img src="src/img/right-arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-slide-index="7">
+                            <div class="item-content">
+                                <div>
+                                    <div class="flex space-x-4 items-center py-4 px-2">
+                                        <span class="icon-box">
+                                            <img src="src/img/automotive.svg" alt="">
+                                        </span>
+                                        <span class="text-white inter font-medium text-lg">Automotive</span>
+                                    </div>
+                                    <div class="py-12 flex flex-wrap gap-4 px-2">
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Drive Showroom Walk-Ins</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Schedule Test Drives</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Feedback Calls</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Service Remainders</button>
+                                    </div>
+                                    <div class="flex justify-end px-3">
+                                        <div class="flex items-center space-x-2 mt-8">
+                                            <span class="text-base font-medium inter text-white">Know more</span>
+                                            <img src="src/img/right-arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-slide-index="8">
+                            <div class="item-content">
+                                <div>
+                                    <div class="flex space-x-4 items-center py-4 px-2">
+                                        <span class="icon-box">
+                                            <img src="src/img/banking.svg" alt="">
+                                        </span>
+                                        <span class="text-white inter font-medium text-lg">Banking</span>
+                                    </div>
+                                    <div class="py-12 flex flex-wrap gap-4 px-2">
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Account Opening</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Account Activation</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Acount Reactivation and Re-KYC</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Upsell and Cross-sell</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Virtual Relationship Manager</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Transaction Inquiry</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Debit/Credit Activation</button>
+                                    </div>
+                                    <div class="flex justify-end px-3">
+                                        <div class="flex items-center space-x-2 mt-0">
+                                            <span class="text-base font-medium inter text-white">Know more</span>
+                                            <img src="src/img/right-arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-slide-index="9">
+                            <div class="item-content">
+                                <div>
+                                    <div class="flex space-x-4 items-center py-4 px-2">
+                                        <span class="icon-box">
+                                            <img src="src/img/retail.svg" alt="">
+                                        </span>
+                                        <span class="text-white inter font-medium text-lg">Retail</span>
+                                    </div>
+                                    <div class="py-12 flex flex-wrap gap-4 px-2">
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Drive Store Walk-Ins</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Reactivate Old Customers</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Feedback Calls</button>
+                                    </div>
+                                    <div class="flex justify-end px-3">
+                                        <div class="flex items-center space-x-2 mt-8">
+                                            <span class="text-base font-medium inter text-white">Know more</span>
+                                            <img src="src/img/right-arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-slide-index="10">
+                            <div class="item-content">
+                                <div>
+                                    <div class="flex space-x-4 items-center py-4 px-2">
+                                        <span class="icon-box">
+                                            <img src="src/img/health.svg" alt="">
+                                        </span>
+                                        <span class="text-white inter font-medium text-lg">Health & Wellness</span>
+                                    </div>
+                                    <div class="py-12 flex flex-wrap gap-4 px-2">
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Lead Qualification and Appointment Booking</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Abandoned Cart</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Feedback and Survery Calls</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Product or Subscription Sales</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Appointment and Payment Remainders</button>
+                                        <button class="text-xs lg:text-sm font-medium text-gray-800 inter px-6 py-2 rounded-full bg-white">Lab Test Process</button>
+                                    </div>
+                                    <div class="flex justify-end px-3">
+                                        <div class="flex items-center space-x-2 mt-8">
+                                            <span class="text-base font-medium inter text-white">Know more</span>
+                                            <img src="src/img/right-arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -406,26 +668,26 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const header = document.getElementById('mainHeader');
-        const toggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
+    const header = document.getElementById('mainHeader');
+    const toggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-        // Scroll shadow logic
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
+    // Scroll shadow logic
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
             header.classList.add('shadow-sm');
-            } else {
+        } else {
             header.classList.remove('shadow-sm');
-            }
-        });
+        }
+    });
 
-        // Mobile menu toggle
-        toggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+    // Mobile menu toggle
+    toggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
 
-        // Swiper
-        const carouselSlider = new Swiper(".carousel-slider", {
+    // Swiper initialization
+    const carouselSlider = new Swiper(".carousel-slider", {
         grabCursor: true,
         watchSlidesProgress: true,
         loop: true,
@@ -435,38 +697,63 @@
         initialSlide: 0,
         on: {
             progress(e) {
-            const t = e.slides.length;
-            console.log("progress", e.slides.length);
-            for (let r = 0; r < e.slides.length; r++) {
-                const o = e.slides[r];
-                const s = e.slides[r].progress;
-                const i = Math.abs(s);
-                let n = 1;
-                if (i > 1) n = 0.3 * (i - 1) + 1;
-                const l = o.querySelectorAll(".item-content");
-                const a = s * n * 72 + "%";
-                const c = 1 - 0.2 * i;
-                const d = t - Math.abs(Math.round(s));
-                o.style.transform = `translateX(${a}) scale(${c})`;
-                o.style.zIndex = d.toString();
-                o.style.opacity = i > 3 ? "0" : "1";
-                l.forEach((el) => {
-                el.style.opacity = (1 - i / 3).toString();
-                });
-            }
+                const t = e.slides.length;
+                for (let r = 0; r < e.slides.length; r++) {
+                    const o = e.slides[r];
+                    const s = e.slides[r].progress;
+                    const i = Math.abs(s);
+                    let n = 1;
+                    if (i > 1) n = 0.3 * (i - 1) + 1;
+                    const l = o.querySelectorAll(".item-content");
+                    const a = s * n * 72 + "%";
+                    const c = 1 - 0.2 * i;
+                    const d = t - Math.abs(Math.round(s));
+                    o.style.transform = `translateX(${a}) scale(${c})`;
+                    o.style.zIndex = d.toString();
+                    o.style.opacity = i > 3 ? "0" : "1";
+                    l.forEach((el) => {
+                        el.style.opacity = (1 - i / 3).toString();
+                    });
+                }
             },
             setTransition(e, t) {
-            for (let r = 0; r < e.slides.length; r++) {
-                const o = e.slides[r];
-                const s = o.querySelectorAll(".item-content");
-                o.style.transitionDuration = `${t}ms`;
-                s.forEach((el) => {
-                el.style.transitionDuration = `${t}ms`;
-                });
-            }
+                for (let r = 0; r < e.slides.length; r++) {
+                    const o = e.slides[r];
+                    const s = o.querySelectorAll(".item-content");
+                    o.style.transitionDuration = `${t}ms`;
+                    s.forEach((el) => {
+                        el.style.transitionDuration = `${t}ms`;
+                    });
+                }
             }
         }
+    });
+
+    // Button click handlers for carousel navigation
+    const buttons = document.querySelectorAll('.carousel-btn');
+    
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const targetIndex = parseInt(button.dataset.index);
+            
+            // Find the slide with matching data-slide-index
+            const slides = document.querySelectorAll('.swiper-slide');
+            let slideIndex = 0;
+            
+            slides.forEach((slide, index) => {
+                if (parseInt(slide.dataset.slideIndex) === targetIndex) {
+                    slideIndex = index;
+                }
+            });
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('carousel-btn-active'));
+            button.classList.add('carousel-btn-active');
+            
+            // Slide to corresponding slide
+            carouselSlider.slideTo(slideIndex);
         });
+    });
     </script>
 </body>
 </html>
