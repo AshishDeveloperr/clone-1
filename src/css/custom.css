@@ -91,10 +91,12 @@
     cursor: pointer;
 }
 .carousel-btn-active {
-    background: linear-gradient(270deg, #dbddf4 0%, #b0adfd 100%) !important;
+    background: #2f76ff;
+    color: #fff !important;
 }
 .carousel-btn:hover {
-    background: #f3f3f3;
+    background: #2f76ff;
+    color: #fff;
 }
 .icon-box{
     border: 1px solid var(--copy-of-squadiqs-spectacular-site---base--white);
