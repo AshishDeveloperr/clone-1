@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
     <style>
         .bg-main {
@@ -663,39 +665,136 @@
                 </div>
             </div>
         </section>
+        <!-- How it works starts -->
+        <section>
+            <div class="container mx-auto px-4 lg:px-20 2xl:px-40 pt-20 pb-32">
+                <div class="text-center mb-28">
+                    <h2 class="text-4xl font-medium inter text-[#122345]" data-aos="zoom-in" data-aos-duration="900">How it works</h2>
+                    <p class="text-lg font-medium text-[#414F6A] mt-4 inter" data-aos="zoom-in" data-aos-duration="1000">We understand that you need to test the waters, <br> which is why we're giving all plans a free 7-day trial.</p>
+                </div>
+                <div class="grid grid-cols-4 gap-10 mt-10">
+                    <div class="col-span-1" data-aos="fade-up" data-aos-duration="900">
+                        <div class="relative mx-auto size-36 overflow-hidden group">
+                            <div aria-hidden="true" class="absolute inset-0 z-0 origin-center transform transition duration-500 group-hover:scale-110 bg-[linear-gradient(to_right,#99A1AF_1px,transparent_1px),linear-gradient(to_bottom,#99A1AF_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+                            <div aria-hidden="true" class="absolute inset-0 z-10 bg-[radial-gradient(transparent_0%,#ffffff_75%)]"></div>
+                            <div class="absolute inset-0 m-auto flex size-12 items-center justify-center border-l border-t border-[#b1afaf] bg-[#ffffff] z-20">
+                                <svg xmlns="http://www.w3.org/2000/svg" 
+                                    width="24" height="24" 
+                                    viewBox="0 0 24 24" 
+                                    fill="none" stroke="#000000" 
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                                    class="lucide lucide-search size-6 transition-transform duration-500 group-hover:rotate-[360deg]" 
+                                    aria-hidden="true">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.3-4.3"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="mt-6 text-zinc-950 text-lg font-semibold leading-7 inter">1. Tell me your ideal target</h3>
+                            <p class="text-base text-zinc-500 font-medium leading-normal inter">Enter your ideal target profile, so I know exactly who I'm looking for</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="relative mx-auto size-36 overflow-hidden group">
+                            <div aria-hidden="true" class="absolute inset-0 z-0 origin-center transform transition duration-500 group-hover:scale-110 bg-[linear-gradient(to_right,#99A1AF_1px,transparent_1px),linear-gradient(to_bottom,#99A1AF_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+                            <div aria-hidden="true" class="absolute inset-0 z-10 bg-[radial-gradient(transparent_0%,#ffffff_75%)]"></div>
+                            <div class="absolute inset-0 m-auto flex size-12 items-center justify-center border-l border-t border-[#99A1AF] bg-[#ffffff] z-20">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-6" aria-hidden="true">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="mt-6 text-zinc-950 text-lg font-semibold leading-7 inter">2. Set up your campaign</h3>
+                            <p class="text-base text-zinc-500 font-medium leading-normal inter">Customize your outreach campaign so I can do all the work for you</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1" data-aos="fade-up" data-aos-duration="1100">
+                        <div class="relative mx-auto size-36 overflow-hidden group">
+                            <div aria-hidden="true" class="absolute inset-0 z-0 origin-center transform transition duration-500 group-hover:scale-110 bg-[linear-gradient(to_right,#99A1AF_1px,transparent_1px),linear-gradient(to_bottom,#99A1AF_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+                            <div aria-hidden="true" class="absolute inset-0 z-10 bg-[radial-gradient(transparent_0%,#ffffff_75%)]"></div>
+                            <div class="absolute inset-0 m-auto flex size-12 items-center justify-center border-l border-t border-[#b1afaf] bg-[#ffffff] z-20">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check size-6 fill-black stroke-white flex-shrink-0" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="mt-6 text-zinc-950 text-lg font-semibold leading-7 inter">3. Generate and approve</h3>
+                            <p class="text-base text-zinc-500 font-medium leading-normal inter">Review and approve all the emails I write before I send them out</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="relative mx-auto size-36 overflow-hidden group">
+                            <div aria-hidden="true" class="absolute inset-0 z-0 origin-center transform transition duration-500 group-hover:scale-110 bg-[linear-gradient(to_right,#99A1AF_1px,transparent_1px),linear-gradient(to_bottom,#99A1AF_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+                            <div aria-hidden="true" class="absolute inset-0 z-10 bg-[radial-gradient(transparent_0%,#ffffff_75%)]"></div>
+                            <div class="absolute inset-0 m-auto flex size-12 items-center justify-center border-l border-t border-[#b1afaf] bg-[#ffffff] z-20">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-no-axes-column-increasing size-6" aria-hidden="true">
+                                    <line x1="12" x2="12" y1="20" y2="10"></line>
+                                    <line x1="18" x2="18" y1="20" y2="4"></line>
+                                    <line x1="6" x2="6" y1="20" y2="16"></line>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="mt-6 text-zinc-950 text-lg font-semibold leading-7 inter">4. Check daily reporting</h3>
+                            <p class="text-base text-zinc-500 font-medium leading-normal inter">Come back every day to see your performance and new leads</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How it works ends -->
         <!-- 0 to 1 starts -->
-        <section class="container mx-auto px-4 lg:px-20 2xl:px-40 py-10">
-            <h2 class="text-4xl font-medium inter text-[#122345] text-center mb-10 mt-4">Go from 0 to 1 in hours, not weeks</h2>
-            <div class="grid grid-cols-6 gap-6 py-4">
-                <div class="col-span-6 lg:col-span-2">
-                    <img src="https://placehold.co/600x400" alt="">
+        <section class="bg-[#F4F4F5]">
+            <div class="container mx-auto px-4 lg:px-20 2xl:px-40 py-14">
+                <h2 class="text-4xl font-medium inter text-[#122345] text-center mb-16 mt-4">Go from 0 to 1 in hours, not weeks</h2>
+                <div class="grid grid-cols-6 gap-12 py-4">
+                    <div class="col-span-6 lg:col-span-2" data-aos="zoom-in-right" data-aos-duration="1000">
+                        <img src="https://placehold.co/600x400" alt="" class="rounded-lg shadow-md hover:shadow-xl transition-all duration-700 hover:duration-700 hover:scale-105">
+                    </div>
+                    <div class="col-span-6 lg:col-span-4 flex items-center" data-aos="zoom-in" data-aos-duration="1000">
+                        <div>
+                            <h2 class="text-4xl font-medium inter text-[#122345] mb-3">How it works</h2>
+                            <p class="text-base font-normal text-gray-600 inter">Easy Setup, Zero to Minimal Integration Launch in days, not months. No complex tools or onboarding required so you can go live before the holidays</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-span-6 lg:col-span-4 flex items-center">
-                    <p class="text-base font-medium text-gray-600 inter">Easy Setup, Zero to Minimal Integration Launch in days, not months. No complex tools or onboarding required so you can go live before the holidays</p>
+                <div class="grid grid-cols-6 gap-12 py-4">
+                    <div class="col-span-6 lg:col-span-4 flex items-center" data-aos="zoom-in" data-aos-duration="1000">
+                        <div>
+                            <h2 class="text-4xl font-medium inter text-[#122345] mb-3">How it works</h2>
+                            <p class="text-base font-normal text-gray-600 inter">Easy Setup, Zero to Minimal Integration Launch in days, not months. No complex tools or onboarding required so you can go live before the holidays</p>
+                        </div>
+                    </div>
+                    <div class="col-span-6 lg:col-span-2" data-aos="zoom-in-right" data-aos-duration="1000">
+                        <img src="https://placehold.co/600x400" alt="" class="rounded-lg shadow-md hover:shadow-xl transition-all duration-700 hover:duration-700 hover:scale-105">
+                    </div>
                 </div>
-            </div>
-            <div class="grid grid-cols-6 gap-6 py-4">
-                <div class="col-span-6 lg:col-span-4 flex items-center">
-                    <p class="text-base font-medium text-gray-600 inter">Easy Setup, Zero to Minimal Integration Launch in days, not months. No complex tools or onboarding required so you can go live before the holidays</p>
+                <div class="grid grid-cols-6 gap-12 py-4">
+                    <div class="col-span-6 lg:col-span-2" data-aos="zoom-in-right" data-aos-duration="1000">
+                        <img src="https://placehold.co/600x400" alt="" class="rounded-lg shadow-md hover:shadow-xl transition-all duration-700 hover:duration-700 hover:scale-105">
+                    </div>
+                    <div class="col-span-6 lg:col-span-4 flex items-center" data-aos="zoom-in" data-aos-duration="1000">
+                        <div>
+                            <h2 class="text-4xl font-medium inter text-[#122345] mb-3">How it works</h2>
+                            <p class="text-base font-normal text-gray-600 inter">Easy Setup, Zero to Minimal Integration Launch in days, not months. No complex tools or onboarding required so you can go live before the holidays</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-span-6 lg:col-span-2">
-                    <img src="https://placehold.co/600x400" alt="">
-                </div>
-            </div>
-            <div class="grid grid-cols-6 gap-6 py-4">
-                <div class="col-span-6 lg:col-span-2">
-                    <img src="https://placehold.co/600x400" alt="">
-                </div>
-                <div class="col-span-6 lg:col-span-4 flex items-center">
-                    <p class="text-base font-medium text-gray-600 inter">Easy Setup, Zero to Minimal Integration Launch in days, not months. No complex tools or onboarding required so you can go live before the holidays</p>
-                </div>
-            </div>
-            <div class="grid grid-cols-6 gap-6 py-4">
-                <div class="col-span-6 lg:col-span-4 flex items-center">
-                    <p class="text-base font-medium text-gray-600 inter">Easy Setup, Zero to Minimal Integration Launch in days, not months. No complex tools or onboarding required so you can go live before the holidays</p>
-                </div>
-                <div class="col-span-6 lg:col-span-2">
-                    <img src="https://placehold.co/600x400" alt="">
+                <div class="grid grid-cols-6 gap-12 py-4">
+                    <div class="col-span-6 lg:col-span-4 flex items-center" data-aos="zoom-in" data-aos-duration="1000">
+                        <div>
+                            <h2 class="text-4xl font-medium inter text-[#122345] mb-3">How it works</h2>
+                            <p class="text-base font-normal text-gray-600 inter">Easy Setup, Zero to Minimal Integration Launch in days, not months. No complex tools or onboarding required so you can go live before the holidays</p>
+                        </div>
+                    </div>
+                    <div class="col-span-6 lg:col-span-2" data-aos="zoom-in-right" data-aos-duration="1000">
+                        <img src="https://placehold.co/600x400" alt="" class="rounded-lg shadow-md hover:shadow-xl transition-all duration-700 hover:duration-700 hover:scale-105">
+                    </div>
                 </div>
             </div>
             
@@ -703,71 +802,75 @@
         <!-- FAQs -->
         <section class="container mx-auto px-4 lg:px-20 2xl:px-40 py-10">
             <div class="mb-10 mt-20">
-                <h2 class="text-4xl font-medium inter text-[#122345] text-center">Frequently Asked Questions</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
-                    <!-- Accordion Item 1 -->
+                <div class="grid grid-cols-2 gap-10">
                     <div class="col-span-1">
-                        <button onclick="toggleAccordion(1)" class="w-full flex justify-between items-center py-5 text-base font-medium text-slate-800 bg-gray-100/90 px-5 rounded-3xl cursor-pointer shadow-sm">
-                            <span class="inter">What's the setup time?</span>
-                            <span id="icon-1" class="text-slate-800 transition-transform duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                        <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="pb-5 text-base font-medium text-slate-500 px-6 py-4 inter">
-                            Material Tailwind is a framework that enhances Tailwind CSS with additional styles and components.
-                        </div>
-                        </div>
+                        <h2 class="text-4xl font-medium inter text-[#122345] mb-4">Frequently Asked Questions</h2>
+                        <p class="text-base font-normal text-gray-600 inter pr-12">Everything you need to know about the product. Can't find the answer you're looking for? Please chat to our friendly team.</p>
                     </div>
-                    
-                    <!-- Accordion Item 2 -->
                     <div class="col-span-1">
-                        <button onclick="toggleAccordion(2)" class="w-full flex justify-between items-center py-5 text-base font-medium text-slate-800 bg-gray-100/90 px-5 rounded-3xl cursor-pointer shadow-sm">
-                        <span class="inter">Can it integrate with our LMS?</span>
-                        <span id="icon-2" class="text-slate-800 transition-transform duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                            <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"></path>
-                            </svg>
-                        </span>
-                        </button>
-                        <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="pb-5 text-base font-medium text-slate-500 px-6 py-4 inter">
-                            You can use Material Tailwind by importing its components into your Tailwind CSS project.
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Accordion Item 3 -->
-                    <div class="col-span-1">
-                        <button onclick="toggleAccordion(3)" class="w-full flex justify-between items-center py-5 text-base font-medium text-slate-800 bg-gray-100/90 px-5 rounded-3xl cursor-pointer shadow-sm">
-                            <span class="inter">Do users need technical knowledge?</span>
-                            <span id="icon-3" class="text-slate-800 transition-transform duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                        <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                            <div class="pb-5 text-base font-medium text-slate-500 px-6 py-4 inter">
-                                Material Tailwind allows you to quickly build modern, responsive websites with a focus on design.
+                        <!-- Accordion Item 1 -->
+                        <div class="col-span-1">
+                            <button onclick="toggleAccordion(1)" class="w-full flex justify-between items-center py-2 text-lg font-medium text-slate-800 cursor-pointer hover:underline">
+                                <span class="inter">What's the setup time?</span>
+                                <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="pb-5 text-base font-normal text-gray-600 py-2 inter">
+                                    Material Tailwind is a framework that enhances Tailwind CSS with additional styles and components.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Accordion Item 3 -->
-                    <div class="col-span-1">
-                        <button onclick="toggleAccordion(4)" class="w-full flex justify-between items-center py-5 text-base font-medium text-slate-800 bg-gray-100/90 px-5 rounded-3xl cursor-pointer shadow-sm">
-                            <span class="inter">Do I need technical staff to set this up?</span>
-                            <span id="icon-3" class="text-slate-800 transition-transform duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                        <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                            <div class="pb-5 text-base font-medium text-slate-500 px-6 py-4 inter">
-                                No. Our platform is plug-and-play—just upload your scenarios or use our library.
+                    
+                        <!-- Accordion Item 2 -->
+                        <div class="col-span-1">
+                            <button onclick="toggleAccordion(2)" class="w-full flex justify-between items-center py-2 text-lg font-medium text-slate-800 cursor-pointer hover:underline">
+                                <span class="inter">Can it integrate with our LMS?</span>
+                                <span id="icon-2" class="text-slate-800 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="pb-5 text-base font-normal text-gray-600 py-2 inter">
+                                    You can use Material Tailwind by importing its components into your Tailwind CSS project.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 3 -->
+                        <div class="col-span-1">
+                            <button onclick="toggleAccordion(3)" class="w-full flex justify-between items-center py-2 text-lg font-medium text-slate-800 cursor-pointer hover:underline">
+                                <span class="inter">Do users need technical knowledge?</span>
+                                <span id="icon-3" class="text-slate-800 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="pb-5 text-base font-medium text-gray-600 py-2 inter">
+                                    Material Tailwind allows you to quickly build modern, responsive websites with a focus on design.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 4 -->
+                        <div class="col-span-1">
+                            <button onclick="toggleAccordion(4)" class="w-full flex justify-between items-center py-2 text-lg font-medium text-slate-800 cursor-pointer hover:underline">
+                                <span class="inter">Do users need technical knowledge?</span>
+                                <span id="icon-3" class="text-slate-800 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                <div class="pb-5 text-base font-medium text-gray-600 py-2 inter">
+                                    Material Tailwind allows you to quickly build modern, responsive websites with a focus on design.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -775,10 +878,14 @@
             </div>
         </section>
         <!-- 0 to 1 ends -->
+        <footer>
+
+        </footer>
 
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     const header = document.getElementById('mainHeader');
     const toggle = document.getElementById('menuToggle');
@@ -866,6 +973,9 @@
             carouselSlider.slideTo(slideIndex);
         });
     });
+
+    // AOS
+    AOS.init();
 
     // Accordian
     function toggleAccordion(index) {
